@@ -1,0 +1,60 @@
+{
+  "extends": [
+    "@cybozu/eslint-config/presets/react-typescript-prettier"
+  ],
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "react/no-unknown-property": ["error", {"ignore": ["css"]}],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "printWidth": 120,
+        "trailingComma": "none",
+        "arrowParens": "avoid"
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        // グループごとの並び順
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          ["parent", "sibling"],
+          "object",
+          "type",
+          "index"
+        ],
+        "newlines-between": "always",
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "alphabetize": { "order": "asc", "caseInsensitive": true },
+        "pathGroups": [
+          {
+            "pattern": "react**",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "{@/app/**,@/features/**,@/libs/**}",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "{@/components/**,@/pages/**}",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "./**.module.css",
+            "group": "index",
+            "position": "after"
+          }
+        ]
+      }
+    ]
+  }
+}

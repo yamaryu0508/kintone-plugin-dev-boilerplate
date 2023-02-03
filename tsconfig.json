@@ -1,0 +1,56 @@
+// https://zenn.dev/mh4gf/scraps/fcaab0c7f23e59
+// https://www.atnr.net/emotion-react-css-prop-error/
+// https://github.com/adanperez/shadow-emotion-esbuild-typescript-webpack/blob/master/tsconfig.json
+// https://emotion.sh/docs/typescript
+// https://github.com/emotion-js/emotion/issues/2474
+// https://github.com/evanw/esbuild/pull/2349
+// https://dev.to/fabiobiondi/create-a-react-18-typescript-bundle-using-esbuild-4n6o
+// https://dev.to/ajitsinghkamal/using-emotionjs-with-vite-2ndj
+// https://typescript-jp.gitbook.io/deep-dive/tsx/others
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    // "lib": [],
+    "jsx": "react-jsx",
+    "experimentalDecorators": true,
+    // "jsxFactory": "",
+    // "jsxFragmentFactory": "",
+    "jsxImportSource": "@emotion/react",
+    "module": "ES2020",
+    // "rootDir": "./",
+    "moduleResolution": "node",
+    "types": [
+      "@emotion/react/types/css-prop"
+    ],
+    "declaration": true,
+    // "declarationMap": true,
+    // "sourceMap": true,
+    // "outFile": "./",
+    "outDir": "./dist",
+    // "noEmit": true,
+    // "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+  },
+  "files": [
+    "./node_modules/@kintone/dts-gen/kintone.d.ts"
+  ],
+  "include": [
+    "src/ts/**/*.ts",
+    "src/ts/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

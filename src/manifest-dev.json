@@ -1,0 +1,32 @@
+{
+  "manifest_version": 1,
+  "version": "0.5.0",
+  "type": "APP",
+  "name": {
+    "en": "kintone-plugin-dev-boilerplate",
+    "ja": "kintone-plugin-dev-boilerplate",
+    "zh": "kintone-plugin-dev-boilerplate"
+  },
+  "description": {
+    "en": "kintone-plugin-dev-boilerplate",
+    "ja": "kintone-plugin-dev-boilerplate",
+    "zh": "kintone-plugin-dev-boilerplate"
+  },
+  "icon": "image/icon.png",
+  "homepage_url": {
+    "en": "http://example.com",
+    "ja": "http://example.com",
+    "zh": "http://example.com"
+  },
+  "desktop": {
+    "js": ["js/desktop.js"]
+  },
+  "mobile": {
+    "js": ["js/mobile.js"]
+  },
+  "config": {
+    "html": "html/config.html",
+    "js": ["js/config.js"],
+    "required_params": []
+  }
+}

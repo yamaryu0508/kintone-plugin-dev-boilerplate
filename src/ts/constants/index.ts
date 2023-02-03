@@ -1,0 +1,1 @@
+export const APP_SELECTOR = '#kintone-plugin-dev-boilerplate';
