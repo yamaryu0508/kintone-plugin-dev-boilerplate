@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@cybozu/eslint-config": "^18.0.0",
-    "@jgoz/esbuild-plugin-typecheck": "^2.0.0",
+    "@jgoz/esbuild-plugin-typecheck": "^3.0.0",
     "@kintone/dts-gen": "^6.1.17",
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/node": "^18.11.16",
