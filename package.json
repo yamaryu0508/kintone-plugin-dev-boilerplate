@@ -13,7 +13,7 @@
     "lint:style:fix": "stylelint ./src/ts/**/*.tsx --fix"
   },
   "devDependencies": {
-    "@cybozu/eslint-config": "^18.0.0",
+    "@cybozu/eslint-config": "^21.0.0",
     "@jgoz/esbuild-plugin-typecheck": "^2.0.0",
     "@kintone/dts-gen": "^6.1.17",
     "@stylelint/postcss-css-in-js": "^0.38.0",
